@@ -1,0 +1,112 @@
+.main{
+  height: 920px;
+  width: 1375px;
+  background-image: url(/src/sprites/common/bg2.png);
+  margin: 0 auto;
+
+  .solutions{
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    padding-top: 45px;
+  }
+
+  .panel {
+    width: 1033px;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 125px;
+
+    .left__panel {
+      height: 320px;
+      width: 317px;
+      background: linear-gradient(to right, rgba(1, 1, 1, 0.8), rgba(50, 50, 50, 0.8), rgba(1, 1, 1, 0.8));
+
+      .hdr__panel {
+        height: 35px;
+        text-transform: uppercase;
+        background-color: black;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 15px 0px 0px 12px;
+      }
+      ul {
+        color: white;
+        font-size: 16px;
+      }
+
+      li {
+        list-style-image: url(/src/sprites/common/check.png);
+        margin-bottom: 15px;
+      }
+      .colortext {
+        color: #fdf500;
+        font-weight: bold;
+      }
+    }
+    /*---left-panel-end---*/
+    .right__panel {
+      height: 316px;
+      width: 312px;
+      float: right;
+
+      .hdr__panel__right{
+        height: 70px;
+        font-size: 37px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+        background: linear-gradient(to right, rgba(1, 1, 1, 0.8), rgba(50, 50, 50, 0.8), rgba(1, 1, 1, 0.8));
+        text-shadow: 1px 1px 2px black, 0 0 1em #626262;
+        .colortext{
+          color: #fdf500;
+        }
+      }
+    }
+  }
+  /*---phone-start---*/
+  .phone{
+    height: 70px;
+    background-color: #15a815;
+    color: white;
+    border-radius: 0 0 0 10px;
+
+
+  .button{
+    position: absolute;
+    width: 60px;
+    height: 70px;
+    background-color: #065c05;
+    border-radius: 0 0 0 10px;
+    text-align: center;
+
+  }
+  .button-phone{
+    background-image: url(/src/sprites/common/phone.png);
+    background-repeat: no-repeat;
+    height: 45px;
+    width: 50px;
+    margin: 15px 9px 0px 10px;
+  }
+  .phone_text {
+    position: relative;
+    width: 215px;
+    margin: 15px 0 0 75px;
+
+    .phone-text {
+      display: block;
+      padding-top: 8px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 16.5px;
+    }
+    .phone-number {
+      font-size: 33px;
+      font-weight: bold;
+      margin-top: -12px;
+    }
+  }
+  }
+  /*-----phone-end------*/
+}
