@@ -15,14 +15,15 @@
         <div class="hdr__logo-line"></div>
         <div class="hdr__hsp"></div>
       </div>
-      <?php if($show_number) { ?>
+      <?php //if($show_number) { ?>
         <div class="hdr__call">
-          <a href="tel: <?php echo $ty ? $phone_ty : $phone; ?>">
-            <p class="hdr__call-title">CALL FOR A FREE QUOTE</p>
-            <p class="hdr__call-number"><?php echo $ty ? $phone_ty : $phone; ?></p>
-          </a>
-        </div>
-      <?php } ?>
+          <img src="/src/sprites/common/phone.png"/>
+        <a href="tel: <?php echo $ty ? $phone_ty : $phone; ?>">
+          <p class="hdr__call-title">CALL FOR A FREE QUOTE</p>
+          <p class="hdr__call-number"><?php echo $ty ? $phone_ty : $phone; ?></p>
+        </a>
+      </div>
+      <?php //} ?>
     </div>
   </div>
 </div>

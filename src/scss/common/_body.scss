@@ -1,26 +1,28 @@
 .main{
-  height: 920px;
-  width: 1375px;
-  background-image: url(/src/sprites/common/bg2.png);
+  background-image: url(/src/sprites/common/bg.png);
   margin: 0 auto;
+  width: 1375px;
+  height: 918px;
 
   .solutions{
     font-size: 35px;
     text-align: center;
     color: white;
     padding-top: 45px;
+    text-shadow: -2px 0 -2px #8b8778;
   }
 
-  .panel {
-    width: 1033px;
-    display: flex;
-    margin: 0 auto;
-    padding-top: 125px;
+  .panel__group {
+    display: inline-block;
+    margin-top: 10px;
 
-    .left__panel {
+    .panel__left {
+      display: inline-block;
       height: 320px;
-      width: 317px;
+      width: 33%;
       background: linear-gradient(to right, rgba(1, 1, 1, 0.8), rgba(50, 50, 50, 0.8), rgba(1, 1, 1, 0.8));
+      color: white;
+      margin-bottom: 50px;
 
       .hdr__panel {
         height: 35px;
@@ -31,24 +33,19 @@
         font-weight: bold;
         padding: 15px 0px 0px 12px;
       }
-      ul {
-        color: white;
-        font-size: 16px;
-      }
-
-      li {
-        list-style-image: url(/src/sprites/common/check.png);
-        margin-bottom: 15px;
-      }
-      .colortext {
-        color: #fdf500;
-        font-weight: bold;
+      .panel_call{
+        width: 100%;
       }
     }
     /*---left-panel-end---*/
-    .right__panel {
+    .panel__center{
+      width: 33%;
+      height: 520px;
+      background-color: white;
+    }
+    .panel__right{
       height: 316px;
-      width: 312px;
+      width: 33%;
       float: right;
 
       .hdr__panel__right{
@@ -56,57 +53,28 @@
         font-size: 37px;
         font-weight: bold;
         text-transform: uppercase;
+        text-shadow: 2px 2px 0 #626262;
         color: white;
         background: linear-gradient(to right, rgba(1, 1, 1, 0.8), rgba(50, 50, 50, 0.8), rgba(1, 1, 1, 0.8));
-        text-shadow: 1px 1px 2px black, 0 0 1em #626262;
-        .colortext{
-          color: #fdf500;
+
+        li{
+          list-style-image: url(/src/sprites/common/check.png);
+
         }
       }
     }
   }
-  /*---phone-start---*/
-  .phone{
-    height: 70px;
-    background-color: #15a815;
-    color: white;
-    border-radius: 0 0 0 10px;
 
-
-  .button{
-    position: absolute;
-    width: 60px;
-    height: 70px;
-    background-color: #065c05;
-    border-radius: 0 0 0 10px;
-    text-align: center;
-
-  }
-  .button-phone{
-    background-image: url(/src/sprites/common/phone.png);
-    background-repeat: no-repeat;
-    height: 45px;
-    width: 50px;
-    margin: 15px 9px 0px 10px;
-  }
-  .phone_text {
-    position: relative;
-    width: 215px;
-    margin: 15px 0 0 75px;
-
-    .phone-text {
-      display: block;
-      padding-top: 8px;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 16.5px;
-    }
-    .phone-number {
-      font-size: 33px;
-      font-weight: bold;
-      margin-top: -12px;
-    }
-  }
-  }
-  /*-----phone-end------*/
+.call{
+  width: 1375px;
+  background-color: black;
+  color: white;
+  margin-left: -170px;
+  margin-top: 50px;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 }

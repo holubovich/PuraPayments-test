@@ -182,3 +182,15 @@ input::-moz-focus-inner {
   background-position: 98% center;
   background-color: #f2dcdc !important;
 }
+
+.list-checked {
+  >li{
+    list-style-image: url(/src/sprites/common/check.png);
+    margin-bottom: 15px;
+  }
+}
+span.text-yellow{
+  color: $yellow;
+  font-weight: bold;
+}
+

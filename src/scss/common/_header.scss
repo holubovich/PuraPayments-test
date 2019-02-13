@@ -1,14 +1,10 @@
 .hdr{
   width: 1375px;
-  height: auto;
   padding-top: 15px;
   padding-bottom: 12px;
-  background-color: white;
+  background-color: $white;
   margin: 0 auto;
-  .container{
 
-
-  }
   .hdr__logo{
     background-image: url(/src/sprites/common/logo.png);
     background-repeat: no-repeat;
@@ -16,10 +12,32 @@
     width: 133px;
   }}
 .hdr__call{
-  background-image: url(/src/sprites/common/telephonetest.png);
-  background-repeat: no-repeat;
+  display: flex;
   height: 50px;
-  width: 257px;
-
+  width: 256px;
+  background: $green-grad;
+  border: 1px solid rgba(6,94,6,0.5);
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  img{
+    background: linear-gradient(to top, #065e06 0, #69b543 100%);;
+    padding: 8px;
+    border-radius: 6px 0 0 6px;
+  }
+  a{
+    margin-left: 18px;
+    margin-top: 7px
+  }
+.hdr__call-title{
+  color: $white;
+  font-weight: bold;
+  font-size: 13px;
+}
+.hdr__call-number{
+  color: $white;
+  font-weight: bold;
+  font-size: 26px;
+  margin-top: -10px;
+}
 
 }
