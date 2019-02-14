@@ -13,7 +13,7 @@ body {
 }
 
 .rel {
-  position:relative;
+  position: relative;
 }
 
 .container {
@@ -59,7 +59,7 @@ body {
 }
 
 .clear {
-  clear:both;
+  clear: both;
 }
 
 .right {
@@ -184,13 +184,16 @@ input::-moz-focus-inner {
 }
 
 .list-checked {
-  >li{
+  > li {
     list-style-image: url(/src/sprites/common/check.png);
     margin-bottom: 15px;
   }
 }
-span.text-yellow{
-  color: $yellow;
+
+.text-yellow {
+  color: #f8ef00;
   font-weight: bold;
 }
+
+
 

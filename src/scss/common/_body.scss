@@ -1,80 +1,162 @@
-.main{
+.main {
   background-image: url(/src/sprites/common/bg.png);
   margin: 0 auto;
   width: 1375px;
   height: 918px;
 
-  .solutions{
+  .solutions {
     font-size: 35px;
     text-align: center;
     color: white;
     padding-top: 45px;
-    text-shadow: -2px 0 -2px #8b8778;
+    text-shadow: 0px 3px 0 rgba(0, 0, 0, 0.48);
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 0.1%, rgba(0, 0, 0, 0.45) 72%);
+    -webkit-background-clip: text;
+    //-webkit-text-fill-color: transparent;
   }
 
   .panel__group {
-    display: inline-block;
+    display: flex;
     margin-top: 10px;
 
     .panel__left {
-      display: inline-block;
+      display: block;
       height: 320px;
       width: 33%;
-      background: linear-gradient(to right, rgba(1, 1, 1, 0.8), rgba(50, 50, 50, 0.8), rgba(1, 1, 1, 0.8));
+      background: linear-gradient(to right, rgba(1, 1, 1, 0.75), rgba(50, 50, 50, 0.75), rgba(1, 1, 1, 0.75));
       color: white;
-      margin-bottom: 50px;
-
+      margin-top: 120px;
       .hdr__panel {
         height: 35px;
         text-transform: uppercase;
         background-color: black;
-        color: white;
+        color: $white;
         font-size: 18px;
         font-weight: bold;
         padding: 15px 0px 0px 12px;
       }
-      .panel_call{
+      .list-left {
+        > li {
+          color: #d7d7d7;
+        }
+      }
+      .panel_call {
         width: 100%;
+      }
+      .list-item {
+        background-image: url(/src/sprites/common/glow-bg.png);
       }
     }
     /*---left-panel-end---*/
-    .panel__center{
+    .panel__center {
       width: 33%;
       height: 520px;
       background-color: white;
     }
-    .panel__right{
+    /*------*/
+    .panel__right {
+      display: block;
       height: 316px;
       width: 33%;
       float: right;
-
-      .hdr__panel__right{
+      background-color: $black;
+      margin-top: 120px;
+      .hdr__panel__right {
         height: 70px;
         font-size: 37px;
         font-weight: bold;
         text-transform: uppercase;
         text-shadow: 2px 2px 0 #626262;
         color: white;
-        background: linear-gradient(to right, rgba(1, 1, 1, 0.8), rgba(50, 50, 50, 0.8), rgba(1, 1, 1, 0.8));
-
-        li{
+        background: linear-gradient(180deg, rgba(0, 0, 0,0.16) -90%, rgba(255, 255, 255,0.16) 150%,rgba(0, 0, 0,0.16));
+        padding-top: 15px;
+        padding-left: 10px;
+      }
+      .list-right {
+        color: #969898;
+        li {
           list-style-image: url(/src/sprites/common/check.png);
-
+          margin: 0;
         }
       }
-    }
-  }
+      .list{
+        display: flex;
+        background-image: url(/src/sprites/common/glow2.png);
+        background-repeat: no-repeat;
+        background-position-x: 95px;
+        height: 180px;
+        background-position-y: -40px;
+        padding-top: 25px;
 
-.call{
-  width: 1375px;
-  background-color: black;
-  color: white;
-  margin-left: -170px;
-  margin-top: 50px;
-  height: 50px;
-  font-size: 25px;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
+
+      .list-items{
+          width: 60%;
+        }
+        .list-term-img{
+          width: 50%;
+          margin-top: 20px;
+          margin-left: -30px;
+        }
+      }
+      .button{
+        height: 65px;
+        background-color: rgba(54,91,170,0.8);
+        display: flex;
+      }
+      .arrow{
+        position:relative;
+        z-index:1;
+        width: 70px;
+        background:url(/src/sprites/common/arrow.png);
+        background-repeat: no-repeat;
+      }
+      .arrow:after{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        /* bottom: 10px; */
+        right: 0px;
+        left: 13px;
+        width: 50px;
+        height: 60px;
+        background: url(/src/sprites/common/arrow.png);
+      }
+
+
+
+
+      .free-term-text {
+        color: #99999a;
+        font-size: 10px;
+        margin-left: 10px;
+      }
+      .button-question{
+        margin-left: -20px;
+        margin-top: 10px;
+      }
+      .button-answer{
+        text-transform: uppercase;
+        color: white;
+        font-style: italic;
+        font-weight: bold;
+      }
+      .button-learn{
+        font-size: 15px;
+        color: #d4ca1f;
+        font-style: italic;
+    }
+  }}
+    .call {
+      width: 1375px;
+      background-color: black;
+      color: white;
+      margin-left: -170px;
+      margin-top: 50px;
+      height: 50px;
+      font-size: 25px;
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
 }
