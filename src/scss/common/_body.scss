@@ -6,13 +6,14 @@
 
   .solutions {
     font-size: 35px;
+    font-weight: lighter;
     text-align: center;
     color: white;
     padding-top: 45px;
     text-shadow: 0px 3px 0 rgba(0, 0, 0, 0.48);
     background: linear-gradient(to left, rgba(0, 0, 0, 0) 0.1%, rgba(0, 0, 0, 0.45) 72%);
     -webkit-background-clip: text;
-    //-webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: rgba(255,255,255,0.9);
   }
 
   .panel__group {
@@ -38,10 +39,26 @@
       .list-left {
         > li {
           color: #d7d7d7;
+          margin-top: 5px;
         }
       }
       .panel_call {
         width: 100%;
+        padding-bottom: 15px;
+        .panel_img{
+          height: 36px;
+          padding: 15px;
+        }
+        .button-call {
+          width: 100%;
+          padding-bottom: 15px;
+          .call-title {
+            font-size: 16px;
+          }
+          .call-number {
+            font-size: 33px;
+          }
+        }
       }
       .list-item {
         background-image: url(/src/sprites/common/glow-bg.png);
@@ -52,6 +69,8 @@
       width: 33%;
       height: 520px;
       background-color: white;
+      border: 10px solid rgba(156,156,156,0.2);
+      border-radius: 5px;
     }
     /*------*/
     .panel__right {
@@ -61,56 +80,56 @@
       float: right;
       background-color: $black;
       margin-top: 120px;
+      border-radius: 0 0 4px 0;
       .hdr__panel__right {
-        height: 70px;
         font-size: 37px;
-        font-weight: bold;
+        font-weight: 800;
         text-transform: uppercase;
         text-shadow: 2px 2px 0 #626262;
         color: white;
-        background: linear-gradient(180deg, rgba(0, 0, 0,0.16) -90%, rgba(255, 255, 255,0.16) 150%,rgba(0, 0, 0,0.16));
-        padding-top: 15px;
-        padding-left: 10px;
+        background: linear-gradient(180deg, rgba(0, 0, 0,0.16) -90%, rgba(255, 255, 255, 0.16) 150%, rgba(0, 0, 0, 0.16));
+        padding: 10px 0 10px 10px;
+
       }
       .list-right {
         color: #969898;
         li {
-          list-style-image: url(/src/sprites/common/check.png);
-          margin: 0;
+        margin: 0;
         }
       }
-      .list{
+      .list {
         display: flex;
         background-image: url(/src/sprites/common/glow2.png);
         background-repeat: no-repeat;
-        background-position-x: 95px;
-        height: 180px;
-        background-position-y: -40px;
-        padding-top: 25px;
+        background-position-x:100px;
+        padding-top: 10px;
+        padding-bottom: 28px;
+        background-position-y: -55px;
 
 
-      .list-items{
+        .list-items {
           width: 60%;
         }
-        .list-term-img{
+        .list-term-img {
           width: 50%;
           margin-top: 20px;
           margin-left: -30px;
         }
       }
-      .button{
+      .button {
         height: 65px;
-        background-color: rgba(54,91,170,0.8);
+        background-color: rgba(54, 91, 170, 0.8);
         display: flex;
+        border-radius: 0 0 4px 0;
       }
-      .arrow{
-        position:relative;
-        z-index:1;
+      .arrow {
+        position: relative;
+        z-index: 1;
         width: 70px;
-        background:url(/src/sprites/common/arrow.png);
+        background: url(/src/sprites/common/arrow.png);
         background-repeat: no-repeat;
       }
-      .arrow:after{
+      .arrow:after {
         content: "";
         position: absolute;
         z-index: -1;
@@ -122,41 +141,39 @@
         background: url(/src/sprites/common/arrow.png);
       }
 
-
-
-
       .free-term-text {
         color: #99999a;
         font-size: 10px;
         margin-left: 10px;
       }
-      .button-question{
+      .button-question {
         margin-left: -20px;
         margin-top: 10px;
       }
-      .button-answer{
+      .button-answer {
         text-transform: uppercase;
         color: white;
         font-style: italic;
         font-weight: bold;
       }
-      .button-learn{
+      .button-learn {
         font-size: 15px;
         color: #d4ca1f;
         font-style: italic;
+      }
     }
-  }}
-    .call {
-      width: 1375px;
-      background-color: black;
-      color: white;
-      margin-left: -170px;
-      margin-top: 50px;
-      height: 50px;
-      font-size: 25px;
-      text-align: center;
-      padding-top: 15px;
-      padding-bottom: 15px;
-    }
+  }
+  .call {
+    width: 1375px;
+    background-color: black;
+    color: white;
+    margin-left: -170px;
+    margin-top: 50px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 
 }

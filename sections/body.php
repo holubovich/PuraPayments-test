@@ -13,23 +13,28 @@
                         <li><span class="text-yellow">Competitive</span> Rates starting at 0.40%</li>
                         <li><span class="text-yellow">24/7</span> Dedicated customer<br/> support team</li>
                         <li><span class="text-yellow">EMV and PCI compliant</span> <br/> plus NFC capable equipment</li>
-                        <li><span class="text-yellow">Fast & Easy</span> applicathion process with <strong> no
+                        <li><span class="text-yellow">Fast & Easy</span> applicathion process <br/>with <strong> no
                                 applicathion fees!</strong></li>
                     </ul>
                 </div>
                 <div class="hdr__call panel_call">
-                    <img src="/src/sprites/common/phone.png"/>
-                    <a href="tel: <?php echo $ty ? $phone_ty : $phone; ?>">
-                        <p class="hdr__call-title">CALL FOR A FREE QUOTE</p>
+                    <img src="/src/sprites/common/phone.png" class="panel_img"/>
 
-                        <p class="hdr__call-number"><?php echo $ty ? $phone_ty : $phone; ?></p>
-                    </a>
+                    <div class="hdr__call button-call">
+                        <a href="tel: <?php echo $ty ? $phone_ty : $phone; ?>">
+                            <p class="hdr__call-title call-title">CALL FOR A FREE QUOTE</p>
+
+                            <p class="hdr__call-number call-number"><?php echo $ty ? $phone_ty : $phone; ?></p>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <?php
-            //include 'sections/form.php';
-            //?>
-            <div class="panel__group panel__center fc"></div>
+
+            <div class="panel__group panel__center">
+                <?php
+                include 'sections/form.php';
+                ?>
+            </div>
             <div class="panel__group panel__right">
                 <div class="free-term">
                     <div class="hdr__panel__right">*<span class="text-yellow">free</span> terminal</div>
