@@ -201,12 +201,13 @@ input::-moz-focus-inner {
   margin-bottom: 7px;
   font-weight: bold;
   border: 1px solid #a15f10;
-  background-color: #ff8302;
+  background: radial-gradient(at top,rgb(255, 214, 48)35%, rgb(255, 127, 2)75%);
   width: 304px;
   text-align: center;
   margin-left: 33px;
   border-radius: 5px;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.85);
+  box-shadow: 0px -3px 7px 0px rgba(255, 255, 255, 0.75);
 }
 
 

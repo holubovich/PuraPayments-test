@@ -1,71 +1,68 @@
-.fc{
+.fc {
   width: 100%;
-  background-color: rgb(243,243,243);
+  background-color: rgb(243, 243, 243);
 
-  .fc__header{
+  .fc__header {
     position: relative;
     margin-top: -20px;
     margin-left: -21px;
     margin-right: -20px;
 
   }
-.fc__header-text{
-  color: white;
-  text-align: center;
-  margin-top: -90px;
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
+  .fc__header-text {
+    color: white;
+    text-align: center;
+    margin-top: -90px;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
 
-  .fc__header-suptext{
-    font-size: 31.3px;
-    font-weight: bold;
+    .fc__header-suptext {
+      font-size: 31.3px;
+      font-weight: bold;
 
+    }
+    .fc__header-subtext {
+      font-size: 18px;
+    }
   }
-  .fc__header-subtext{
-    font-size: 18px;
+  .img-shadow {
+    margin-left: -5px;
+    margin-right: -5px
   }
-}
-  .step__title{
+  .step__title {
     text-align: center;
     font-size: 19px;
     color: #171717;
     font-weight: 700;
     margin-top: 20px;
-    border-bottom: 3px solid rgba(228,228,228,0.5);
+    border-bottom: 3px solid rgba(228, 228, 228, 0.5);
     border-bottom-style: ridge;
     padding-bottom: 15px;
-    background-color: rgb(236,236,236);
+    background-color: rgb(236, 236, 236);
     margin-bottom: 28px;
-
   }
-
-}
-.dots{
-  display: flex;
-  height: 10px;
-  margin-left: 145px;
-  margin-top: 75px;}
-  .dots:active{
+  .dots {
     display: flex;
-
+    height: 10px;
+    margin-left: 145px;
+    margin-top: 75px;
   }
-.step{
-  display: none;
-}
-.step1{
-  display: block;
-}
-.step:active{
-  display: block;
-}
-.dot{
-  background-color:#a6a6a6;
-  width: 8px;
-  height: 8px;
-  border-radius: 4px;
-  margin-left: 8px;
-
-}
-.dot:active{
-  background-color: #0066cc;
-
+  .step {
+    display: none;
+  }
+  .step1 {
+    display: block;
+  }
+  .step:active {
+    display: block;
+  }
+  .dot {
+    background-color: #a6a6a6;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    margin-left: 8px;
+  }
+  .active {
+    background-color: #0066cc;
+  }
 }
