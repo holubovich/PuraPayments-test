@@ -1,6 +1,6 @@
 <div class="fc">
   <div class="fc__header">
-   <img src="/src/sprites/common/bar.png" alt="" class="img-shadow">
+   <!--<img src="/src/sprites/common/bar.png" alt="" class="img-shadow">-->
     <div class="fc__header-text js-header">
         <p class="fc__header-suptext">START HERE</p>
         <p class="fc__header-subtext">Get your FREE Personalized Quote</p>

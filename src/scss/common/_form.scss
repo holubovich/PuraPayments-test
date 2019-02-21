@@ -5,15 +5,20 @@
   .fc__header {
     position: relative;
     margin-top: -20px;
-    margin-left: -21px;
-    margin-right: -20px;
+    margin-left: -11px;
+    margin-right: -11px;
 
   }
   .fc__header-text {
-    color: white;
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: #fff;
     text-align: center;
-    margin-top: -90px;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
+    text-shadow: 0 1px 3px rgba(0,0,0,.7);
+    background: radial-gradient(at top,#8192fb 35%,#194aac 75%);
+    border-radius: 5px 5px 40px 40px;
+
 
     .fc__header-suptext {
       font-size: 31.3px;
